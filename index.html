@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/Draggable.min.js"></script> -->
+    <title>Jigsaw puzzle</title>
+  </head>
+  <body>
+	<div class='wrapper' >
+
+    <div id="container">
+      <!-- <div id="box1" class="box">box1</div>
+      <div id="box2" class="box">box2</div>
+      <div id="box3" class="box">box3</div> -->
+
+      <div class='hs' id='hs-1' data-hs-index=1></div>
+      <div class='hs' id='hs-2' data-hs-index=2></div>
+      <div class='hs' id='hs-3' data-hs-index=3></div>
+      <div class='hs' id='hs-4' data-hs-index=4></div>
+      <div class='hs' id='hs-5' data-hs-index=5></div>
+      <div class='hs' id='hs-6' data-hs-index=6></div>
+      <div class='hs' id='hs-7' data-hs-index=7></div>
+      <div class='hs' id='hs-8' data-hs-index=8></div>
+      <div class='hs' id='hs-9' data-hs-index=9></div>
+      <div class='hs' id='hs-10' data-hs-index=10></div>
+      <div class='hs' id='hs-11' data-hs-index=11></div>
+      <div class='hs' id='hs-12' data-hs-index=12></div>
+      <div class='hs' id='hs-13' data-hs-index=13></div>
+      <div class='hs' id='hs-14' data-hs-index=14></div>
+      <div class='hs' id='hs-15' data-hs-index=15></div>
+      <div class='hs' id='hs-16' data-hs-index=16></div>
+      <div class='hs' id='hs-17' data-hs-index=17></div>
+      <div class='hs' id='hs-18' data-hs-index=18></div>
+      <div class='hs' id='hs-19' data-hs-index=19></div>
+      <div class='hs' id='hs-20' data-hs-index=20></div>
+      <div class='hs' id='hs-21' data-hs-index=21></div>
+      <div class='hs' id='hs-22' data-hs-index=22></div>
+      <div class='hs' id='hs-23' data-hs-index=23></div>
+      <div class='hs' id='hs-24' data-hs-index=24></div>
+      <div class='hs' id='hs-25' data-hs-index=25></div>
+      <div class='hs' id='hs-26' data-hs-index=26></div>
+      <div class='hs' id='hs-27' data-hs-index=27></div>
+      <div class='hs' id='hs-28' data-hs-index=28></div>
+      <div class='hs' id='hs-29' data-hs-index=29></div>
+      <div class='hs' id='hs-30' data-hs-index=30></div>
+      <div class='hs' id='hs-31' data-hs-index=31></div>
+      <div class='hs' id='hs-32' data-hs-index=32></div>
+      <div class='hs' id='hs-33' data-hs-index=33></div>
+      <div class='hs' id='hs-34' data-hs-index=34></div>
+      <div class='hs' id='hs-35' data-hs-index=35></div>
+      <div class='hs' id='hs-36' data-hs-index=36></div>
+      <div class='hs' id='hs-37' data-hs-index=37></div>
+      <div class='hs' id='hs-38' data-hs-index=38></div>
+      <div class='hs' id='hs-39' data-hs-index=39></div>
+      <div class='hs' id='hs-40' data-hs-index=40></div>
+      <div class='hs' id='hs-41' data-hs-index=41></div>
+
+      <div class='is' id='is-1' data-is-index=1></div>
+      <div class='is' id='is-2' data-is-index=2></div>
+      <div class='is' id='is-3' data-is-index=3></div>
+      <div class='is' id='is-4' data-is-index=4></div>
+      <div class='is' id='is-5' data-is-index=5></div>
+      <div class='is' id='is-6' data-is-index=6></div>
+      <div class='is' id='is-7' data-is-index=7></div>
+      <div class='is' id='is-8' data-is-index=8></div>
+      <div class='is' id='is-9' data-is-index=9></div>
+      <div class='is' id='is-10' data-is-index=10></div>
+      <div class='is' id='is-11' data-is-index=11></div>
+      <div class='is' id='is-12' data-is-index=12></div>
+      <div class='is' id='is-13' data-is-index=13></div>
+      <div class='is' id='is-14' data-is-index=14></div>
+      <div class='is' id='is-15' data-is-index=15></div>
+      <div class='is' id='is-16' data-is-index=16></div>
+      <div class='is' id='is-17' data-is-index=17></div>
+      <div class='is' id='is-18' data-is-index=18></div>
+      <div class='is' id='is-19' data-is-index=19></div>
+      <div class='is' id='is-20' data-is-index=20></div>
+      <div class='is' id='is-21' data-is-index=21></div>
+      <div class='is' id='is-22' data-is-index=22></div>
+      <div class='is' id='is-23' data-is-index=23></div>
+      <div class='is' id='is-24' data-is-index=24></div>
+      <div class='is' id='is-25' data-is-index=25></div>
+      <div class='is' id='is-26' data-is-index=26></div>
+      <div class='is' id='is-27' data-is-index=27></div>
+      <div class='is' id='is-28' data-is-index=28></div>
+      <div class='is' id='is-29' data-is-index=29></div>
+      <div class='is' id='is-30' data-is-index=30></div>
+      <div class='is' id='is-31' data-is-index=31></div>
+      <div class='is' id='is-32' data-is-index=32></div>
+      <div class='is' id='is-33' data-is-index=33></div>
+      <div class='is' id='is-34' data-is-index=34></div>
+      <div class='is' id='is-35' data-is-index=35></div>
+      <div class='is' id='is-36' data-is-index=36></div>
+      <div class='is' id='is-37' data-is-index=37></div>
+      <div class='is' id='is-38' data-is-index=38></div>
+      <div class='is' id='is-39' data-is-index=39></div>
+      <div class='is' id='is-40' data-is-index=40></div>
+      <div class='is' id='is-41' data-is-index=41></div>
+
+
+
+
+    </div>
+
+		
+	
+	</div>
+
+	<!-- ::::: MAIN JS SCRIPT ::::: -->
+   
+    <script type="module" src="./js/main.js"></script>
+   
+  </body>
+</html>

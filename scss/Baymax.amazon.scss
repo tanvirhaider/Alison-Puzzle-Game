@@ -1,0 +1,145 @@
+
+
+
+
+
+.video-16x9 video {
+    width: 100%;
+}
+
+.custom video {
+    width: 100%;
+    height: auto;
+}
+
+.poster {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.poster-background {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poster-frame-playBtn {
+    position: absolute;
+    // width: 100px;
+    // height: 100px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    z-index: 999;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.default-play-buttom, .default-pause-buttom {
+    position: absolute;
+    z-index: 999;
+}
+
+.default-play-buttom.show {
+    display: block;
+}
+
+.default-mute-buttom, .default-un-mute-buttom {
+    position: absolute;
+    right: var(--icon-right);
+    z-index: 999;
+}
+
+.default-play-buttom {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.default-pause-buttom {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.default-mute-buttom {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.default-un-mute-buttom {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+.progress-bar {
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.video-16x9 {
+    width: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-anamorphic {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+}
+
+.custom {
+    width: 100%;
+    height: 100%;
+}
+
+
+.video-9x16 { position: relative; }
+
+.video-9x16 video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.tiktok {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.tiktok .poster-frame-playBtn {
+    background-image: url("https://storage.googleapis.com/nytpi/paidposts/2021/webflow-baymax-video/playBtn-white-tiktok.png") !important;
+}
+
+.tiktok .poster-frame-playBtn {
+    width: 50px;
+    height:auto;
+}

@@ -1,0 +1,83 @@
+
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+.space-filler-yo {
+    height: 0vh;
+    width: 100%;
+    position: relative;
+    background-color: pink;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    // border: 1px double orange;
+    position: relative;
+
+    // @include breakpoint(mobile) {
+    //     height: auto;
+    //  }
+}
+
+
+.fullscreen-vid {
+    height: 400vh;
+    position: relative;
+    
+    video {
+        object-fit: cover;
+        // width: 100%;
+    
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+}
+
+
+.fullbleed {
+    width: 100%;
+    height: 100%;
+}
+
+
+.not-desktop {
+    display: none;
+
+    @include breakpoint(mobile) {
+        display: block;
+     }
+}
+
+
+.desktop {
+    display: block;
+
+    @include breakpoint(mobile) {
+        display: none;
+     }
+}
+
+
+.mobile {
+    display: none;
+
+    @include breakpoint(mobile) {
+        display: block;
+     }
+}
